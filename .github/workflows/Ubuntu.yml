@@ -77,7 +77,5 @@ jobs:
            send "123456\r"
            expect eof
            '
-    - name: Sleep for 30 seconds
-      uses: jakejarvis/wait-action@master
-      with:
-        time: '999m'
+    - name: Shutdown for 8 Hours
+      run: sleep 86400
